@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../style.css">
+<script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+<title>School Club Information</title>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">OB Montessori</div>
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../seatwork2/index.html">GWA Calculator</a>
+        <a href="index.html">School Club Info</a>
+    </div>
+</nav>
+
+<main>
+<div class="container">
+    <h2>School Club Information</h2>
+    <label>Select a Club:</label>
+    <select id="clubSelect">
+        <option value="Chess Club">Chess Club</option>
+        <option value="Music Club">Music Club</option>
+        <option value="Science Club">Science Club</option>
+    </select>
+    <button py-click="show_info">Show Club Information</button>
+    <div id="output"></div>
+</div>
+</main>
+
+<footer>Benigno Rivera 10 – Sapphire</footer>
+<script type="py" src="main.py"></script>
+</body>
+</html>
