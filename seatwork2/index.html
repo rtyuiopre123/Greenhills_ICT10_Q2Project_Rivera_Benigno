@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../style.css">
+<script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+<title>Student Grade Calculator</title>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">OB Montessori</div>
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="index.html">GWA Calculator</a>
+        <a href="../skilltest/index.html">School Club Info</a>
+    </div>
+</nav>
+
+<main>
+<div class="container">
+    <h2>Student Grade Calculator</h2>
+    <div class="row">
+        <input type="text" id="firstName" placeholder="First Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+    </div>
+
+    <h3>Enter your grades:</h3>
+    <div class="row">
+        <input type="number" id="science" placeholder="Science">
+        <input type="number" id="math" placeholder="Math">
+    </div>
+    <div class="row">
+        <input type="number" id="english" placeholder="English">
+        <input type="number" id="filipino" placeholder="Filipino">
+    </div>
+    <div class="row">
+        <input type="number" id="ict" placeholder="ICT">
+        <input type="number" id="pe" placeholder="PE">
+    </div>
+
+    <button py-click="calculate_gwa">Calculate GWA</button>
+    <button onclick="location.reload()">Clear Fields</button>
+
+    <div id="output"></div>
+</div>
+</main>
+
+<footer>Benigno Rivera 10 – Sapphire</footer>
+<script type="py" src="main.py"></script>
+</body>
+</html>
